@@ -42,6 +42,11 @@
         <div class="main">
             <div class="container-fluid topCont">
 
+
+
+
+
+
                 <div class="row" id='topDiv'>
                     <div class="col s12 m9 l9 mCatCont">
                         <blockquote id='instructions' class="flow-text">
@@ -55,6 +60,7 @@
                             </ol>
                             <div> Good luck!</div>
                         </blockquote>
+                        <div id="mealCatLabel" data-tooltip="Click the options below to remove">Picking from:</div>
                         <div id="btnsGoHere"> </div>
                         <div id="formDiv" class="row input-field">
                             <div class="col s12 m6">
@@ -87,31 +93,40 @@
                                 </span>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
 
+        </div>
+        </div>
 
-            <div class="container ">
-                <div class="row ">
-                    <div class="col s12 m12 l12">
 
-                        <div class="card horizontal">
-                            <div class="center-align ">
-                                <div class="gridSection">
-                                    <h5 class="gridHeader center-align">Meal of fortune, turn turn turn, show us the
-                                        meal our taste buds yearn...
-                                    </h5>
-                                    <hr>
-                                    <div class="gridContainer">
+        <div class="container ">
+            <div class="row ">
+                <div class="col s12 m12 l12">
 
-                                    </div>
+                    <div class="card horizontal">
+                        <div class="center-align ">
+                            <div class="gridSection">
+                                <h5 class="gridHeader center-align">Meal of fortune, turn turn turn, show us the
+                                    meal our taste buds yearn...
+                                </h5>
+                                <hr>
+                                <div class="gridContainer">
+
                                 </div>
                             </div>
                         </div>
-                        <div class="offset-s6 center-align m12 s12 l12" id="spinBtnCont">
-                            <a id="spinToWin" class="btn-large waves black lighten-4 "><i
-                                    class="material-icons left"></i>pick!</a>
+                    </div>
+                    <div class="offset-s6 center-align m12 s12 l12 rounded" id="spinBtnCont">
+                        <a id="spinToWin" class="btn-large waves black lighten-4 "><i
+                                class="material-icons left"></i>Spin!</a>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <!-- card content goes here -->
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
@@ -121,64 +136,60 @@
                                 <div class="card-content">
                                     <!-- card content goes here -->
                                 </div>
-                                <div class="card-stacked">
-                                    <div class="card-content">
-                                        <!-- card content goes here -->
-                                    </div>
-                                    <div class="card-action">
-                                        </button>
-                                    </div>
+                                <div class="card-action">
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- ______________________ everything above should be a ....___________________________________ -->
-                    <div class="col s12">
-                        <div class="grid-example col s12 resResultsCont"><span class="flow-text">
-                                <h5 id="resTextLabel">Results</h5>
-                            </span>
-                            <div id="resultsGoHere"></div>
-                            <ul class="collapsible">
-
-                                <li>
-                                    <div class="collapsible-header"> <i class="small material-icons">info</i><span
-                                            id="firstName"></span></div>
-                                    <div class="collapsible-body row " id="first"><span></span></div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header"> <i class="small material-icons">info</i> <span
-                                            id="secondName"></span></div>
-                                    <div class="collapsible-body row" id="second"><span></span></div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header"> <i class="small material-icons">info</i><span
-                                            id="thirdName"></span></div>
-                                    <div class="collapsible-body row" id="third"><span></span></div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header"> <i class="small material-icons">info</i><span
-                                            id="fourthName"></span></div>
-                                    <div class="collapsible-body row" id="fourth"><span></span></div>
-                                </li>
-                                <li>
-                                    <div class="collapsible-header"><i class="small material-icons">info</i> <span
-                                            id="fifthName"></span></div>
-                                    <div class="collapsible-body row" id="fifth"><span></span></div>
-                                </li>
-                            </ul>
-                            <span id="offsetButtonsCont">
-                                <a class="waves-effect waves-light btn" id="lastFive"> Go Back</a>
-                            </span>
-
-                            <span>
-                                <a class="waves-effect waves-light btn-large black" id="nextFive"> Next Five</a>
-
-                            </span>
-                        </div>
-                    </div>
-                    <!-- </div> -->
                 </div>
+                <!-- ______________________ everything above should be a ....___________________________________ -->
+                <div class="col s12">
+                    <div class="grid-example col s12 resResultsCont"><span class="flow-text">
+                            <h5 id="resTextLabel">Results</h5>
+                        </span>
+                        <div id="resultsGoHere"></div>
+                        <ul class="collapsible">
+
+                            <li>
+                                <div class="collapsible-header"> <i class="small material-icons">info</i><span
+                                        id="firstName"></span></div>
+                                <div class="collapsible-body row " id="first"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"> <i class="small material-icons">info</i> <span
+                                        id="secondName"></span></div>
+                                <div class="collapsible-body row" id="second"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"> <i class="small material-icons">info</i><span
+                                        id="thirdName"></span></div>
+                                <div class="collapsible-body row" id="third"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"> <i class="small material-icons">info</i><span
+                                        id="fourthName"></span></div>
+                                <div class="collapsible-body row" id="fourth"><span></span></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="small material-icons">info</i> <span
+                                        id="fifthName"></span></div>
+                                <div class="collapsible-body row" id="fifth"><span></span></div>
+                            </li>
+                        </ul>
+                        <span id="offsetButtonsCont">
+                            <a class="waves-effect waves-light btn" id="lastFive"> Go Back</a>
+                        </span>
+
+                        <span>
+                            <a class="waves-effect waves-light btn-large black" id="nextFive"> Next Five</a>
+
+                        </span>
+                    </div>
+                </div>
+                <!-- </div> -->
             </div>
+        </div>
 
         </div>
     </main>
