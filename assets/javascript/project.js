@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     var ingredients = ['thai', 'mexican', 'sushi', 'japanese', 'chinese', 'american', 'brewpub', 'froyo', 'pizza', 'italian']
     console.log(ingredients)
     var colors = ['#F291BF', '#F2CB05 ', '#F2B705', '#F27405', '#F23005']
@@ -19,6 +20,8 @@ $(document).ready(function () {
     var long = '';
     var userCats = [];
     var offset = 0;
+
+    
 
 
     function promptZip(spinAfter) {
@@ -307,16 +310,9 @@ $(document).ready(function () {
         makingIngredientBtn.textContent = ingredient
 
         //adding an attribute for the ajax call function
-        $(makingIngredientBtn).attr("ing-data", ingredient)
-        // $(makingIngredientBtn).attr("data-position", "bottom")
-        $(makingIngredientBtn).attr("id", "choiceBtn")
-        $(makingIngredientBtn).attr("class", "btn tooltipped btn-flat mCat waves-light btn-medium")
-        // $(makingIngredientBtn).attr("onclick", "{(e)=>{e.preventDefault()}}")
+        $(makingIngredientBtn).attr("ing-data", ingredient).attr("id", "choiceBtn").attr("class", "btn-flat mCat waves-light btn-medium btn tooltipped").attr('data-position','bottom').attr('data-tooltip','click to remove')
 
-        //adds the materialize class to the button
-        // $(makingIngredientBtn).addClass("btn-flat mCat waves-effect waves-light btn-small ")
-        $(makingIngredientBtn).attr('data-tooltip', 'click to remove')
-        $(makingIngredientBtn).attr('data-position', 'bottom')
+        
 
         //append each item to buttonsDiv
         $('#btnsGoHere').append(makingIngredientBtn)
